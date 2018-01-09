@@ -25,20 +25,59 @@ if(countries === 'Y' || countries === 'YES') {
 }
 
 //2
-prompt('I speak 4 languages');
+var languages = prompt('I speak 4 languages').toUpperCase();
+
+if(languages === 'Y' || languages === 'YES') {
+    alert('Correct! I speak English, Spanish, Mandarin, and ASL. I can\'t wait until I can add JavaScript to the list.');
+}   else if (languages === 'N' || languages === 'NO') {
+    alert('Nope, I do speak four. Soon to be 5 once I have mastered JavaScript!');
+}   else {
+    alert('Please enter Y or N!');
+}
 
 //3
-prompt('I love bubble tea');
+var bubbleTea = prompt('I love bubble tea').toUpperCase();
+
+if(bubbleTea === 'Y' || bubbleTea === 'YES') {
+    alert('True. One of my favorite endulgences.');
+}   else if (bubbleTea === 'N' || bubbleTea === 'NO') {
+    alert('Bubble tea is awesome! I love all the different types.');
+}   else {
+    alert('Please enter Y or N!');
+}
 
 //4
-prompt('I really, really love bubble tea');
+var reallyLoveBubbleTea = prompt('I really, really love bubble tea').toUpperCase();
+
+if(reallyLoveBubbleTea === 'Y' || reallyLoveBubbleTea === 'YES') {
+    alert('Definitely true. I once walked 3 hours to get to the nearest bubble tea store.');
+}   else if (reallyLoveBubbleTea === 'N' || reallyLoveBubbleTea === 'NO') {
+    alert('.... I am obviously not speaking to a fellow bubble tea lover.');
+}   else {
+    alert('Please enter Y or N!');
+}
 
 //5
-prompt('I hate snakes');
+var scarySnakes = prompt('I hate snakes').toUpperCase();
+
+if(scarySnakes === 'Y' || scarySnakes === 'YES') {
+    alert('I am actually not a snake hater. Some of them can even be quite cute.');
+}   else if (scarySnakes === 'N' || scarySnakes === 'NO') {
+    alert('I agree, snakes are not bad!');
+}   else {
+    alert('Please enter Y or N!');
+}
 
 //6
-prompt('I love coding almost as much as bubble tea');
+var loveCoding = prompt('I love coding almost as much as bubble tea').toUpperCase();
 
+if(loveCoding === 'Y' || loveCoding === 'YES') {
+    alert('Yes, I am having fun so far.');
+}   else if (loveCoding === 'N' || loveCoding === 'NO') {
+    alert('Really? You must be pulling my leg.');
+}   else {
+    alert('Please enter Y or N!');
+}
 
 //I am glad we are getting to know each other (alert)
 alert('Thanks for playing ' + userName + '! I am glad we are getting to know each other.');
