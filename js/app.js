@@ -15,6 +15,7 @@ alert('Answer all of the following questions with Y/N or Yes/No');
 
 //1
 var countries = prompt('I have been to more than 5 different countries.').toUpperCase();
+console.log(contries);
 
 if(countries === 'Y' || countries === 'YES') {
     alert('I have only been to 3 countries, but I would love to travel more.');
@@ -26,6 +27,7 @@ if(countries === 'Y' || countries === 'YES') {
 
 //2
 var languages = prompt('I speak 4 languages').toUpperCase();
+console.log(languages);
 
 if(languages === 'Y' || languages === 'YES') {
     alert('Correct! I speak English, Spanish, Mandarin, and ASL. I can\'t wait until I can add JavaScript to the list.');
@@ -37,6 +39,7 @@ if(languages === 'Y' || languages === 'YES') {
 
 //3
 var bubbleTea = prompt('I love bubble tea').toUpperCase();
+console.log(bubbleTea);
 
 if(bubbleTea === 'Y' || bubbleTea === 'YES') {
     alert('True. One of my favorite endulgences.');
@@ -48,6 +51,7 @@ if(bubbleTea === 'Y' || bubbleTea === 'YES') {
 
 //4
 var reallyLoveBubbleTea = prompt('I really, really love bubble tea').toUpperCase();
+console.log(reallyLoveBubbleTea);
 
 if(reallyLoveBubbleTea === 'Y' || reallyLoveBubbleTea === 'YES') {
     alert('Definitely true. I once walked 3 hours to get to the nearest bubble tea store.');
@@ -59,6 +63,7 @@ if(reallyLoveBubbleTea === 'Y' || reallyLoveBubbleTea === 'YES') {
 
 //5
 var scarySnakes = prompt('I hate snakes').toUpperCase();
+console.log(scarySnakes);
 
 if(scarySnakes === 'Y' || scarySnakes === 'YES') {
     alert('I am actually not a snake hater. Some of them can even be quite cute.');
@@ -70,6 +75,7 @@ if(scarySnakes === 'Y' || scarySnakes === 'YES') {
 
 //6
 var loveCoding = prompt('I love coding almost as much as bubble tea').toUpperCase();
+console.log(loveCoding);
 
 if(loveCoding === 'Y' || loveCoding === 'YES') {
     alert('Yes, I am having fun so far.');
