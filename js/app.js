@@ -42,7 +42,7 @@ var bubbleTea = prompt('I love bubble tea').toUpperCase();
 console.log('Bubble tea: ' + bubbleTea);
 
 if(bubbleTea === 'Y' || bubbleTea === 'YES') {
-    alert('True. One of my favorite endulgences.');
+    alert('True. One of my favorite indulgences.');
 }   else if (bubbleTea === 'N' || bubbleTea === 'NO') {
     alert('Bubble tea is awesome! I love all the different types.');
 }   else {
@@ -80,6 +80,31 @@ console.log('Love coding: ' + loveCoding);
 if(loveCoding === 'Y' || loveCoding === 'YES') {
     alert('Yes, I am having fun so far.');
 }   else if (loveCoding === 'N' || loveCoding === 'NO') {
+    alert('Really? You must be pulling my leg.');
+}   else {
+    alert('Please enter Y or N!');
+}
+
+//7 fav num
+var favNumber = prompt('What is my favorite number between 1 and 20? Respond with a number.');
+console.log('Fav Number: ' + favNumber);
+
+if(favNumber === 'Y' || favNumber === 'YES') {
+    alert('Yes, I am having fun so far.');
+}   else if (favNumber === 'N' || favNumber === 'NO') {
+    alert('Really? You must be pulling my leg.');
+}   else {
+    alert('Please enter Y or N!');
+}
+
+
+//8 fav colors
+var favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toUpperCase();
+console.log('Love coding: ' + favColors);
+
+if(favColors === 'Y' || favColors === 'YES') {
+    alert('Yes, I am having fun so far.');
+}   else if (favColors === 'N' || favColors === 'NO') {
     alert('Really? You must be pulling my leg.');
 }   else {
     alert('Please enter Y or N!');
