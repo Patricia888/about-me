@@ -9,6 +9,15 @@ h2 {
 }
 
 h3 {
-    color: purple;
+    margin: 18px;
 }
 
+ol {
+    color: purple;
+    margin: 30px;
+}
+
+ul {
+    color: purple;
+    margin: 30px;
+}
