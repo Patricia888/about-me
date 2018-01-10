@@ -89,14 +89,22 @@ if(loveCoding === 'Y' || loveCoding === 'YES') {
 var favNumber = prompt('What is my favorite number between 1 and 20? Respond with a number.');
 console.log('Fav Number: ' + favNumber);
 
-if(favNumber === 'Y' || favNumber === 'YES') {
-    alert('Yes, I am having fun so far.');
-}   else if (favNumber === 'N' || favNumber === 'NO') {
-    alert('Really? You must be pulling my leg.');
-}   else {
-    alert('Please enter Y or N!');
-}
+parseInt(favNumber);
 
+var answerFavNum = 8;
+
+for (var numTries = 0; numTries<4; numTries++) {
+    console.log('Fav Num tries: ' + favNumber);
+
+    if (favNumber === answerFavNum) {
+        alert('That is correct!!!!');
+        break;
+}   else if (favNumber > answerFavnum) {
+        alert('Too high.');
+}   else if (favNumber < answerFavNum) {
+        alert('Too low.');
+}   
+}
 
 //8 fav colors
 var favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toUpperCase();
