@@ -5,7 +5,7 @@
 var userName = prompt('Hi, what is your name?');
 console.log(userName);
 
-//Prompt saying get ready to play (alert)
+//Alert saying get ready to play
 
 alert('Nice to meet you ' + userName + '. Get ready to play a guessing game about what I love most: Me!');
 
@@ -15,7 +15,7 @@ alert('Answer all of the following questions with Y/N or Yes/No');
 
 //1
 var countries = prompt('I have been to more than 5 different countries.').toUpperCase();
-console.log(contries);
+console.log(countries);
 
 if(countries === 'Y' || countries === 'YES') {
     alert('I have only been to 3 countries, but I would love to travel more.');
@@ -85,5 +85,7 @@ if(loveCoding === 'Y' || loveCoding === 'YES') {
     alert('Please enter Y or N!');
 }
 
+
 //I am glad we are getting to know each other (alert)
 alert('Thanks for playing ' + userName + '! I am glad we are getting to know each other.');
+
