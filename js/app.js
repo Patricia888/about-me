@@ -5,6 +5,9 @@
 var userName = prompt('Hi, what is your name?');
 console.log('Username: ' + userName);
 
+//Counter for correct guesses
+var scoreCounter = 0;
+
 //Alert saying get ready to play
 
 alert('Nice to meet you ' + userName + '. Get ready to play a guessing game about what I love most: Me!');
@@ -21,6 +24,7 @@ if(countries === 'Y' || countries === 'YES') {
   alert('I have only been to 3 countries, but I would love to travel more.');
 }   else if (countries === 'N' || countries === 'NO') {
   alert('That is correct, I have only been to 3 different countries.');
+  scoreCounter++;
 }   else {
   alert('Please enter Y or N!');
 }
@@ -31,6 +35,7 @@ console.log('4 languages: ' + languages);
 
 if(languages === 'Y' || languages === 'YES') {
   alert('Correct! I speak English, Spanish, Mandarin, and ASL. I can\'t wait until I can add JavaScript to the list.');
+  scoreCounter++;
 }   else if (languages === 'N' || languages === 'NO') {
   alert('Nope, I do speak four. Soon to be 5 once I have mastered JavaScript!');
 }   else {
@@ -43,6 +48,7 @@ console.log('Bubble tea: ' + bubbleTea);
 
 if(bubbleTea === 'Y' || bubbleTea === 'YES') {
   alert('True. One of my favorite indulgences.');
+  scoreCounter++;
 }   else if (bubbleTea === 'N' || bubbleTea === 'NO') {
   alert('Bubble tea is awesome! I love all the different types.');
 }   else {
@@ -55,6 +61,7 @@ console.log('Really love bubble tea: ' + reallyLoveBubbleTea);
 
 if(reallyLoveBubbleTea === 'Y' || reallyLoveBubbleTea === 'YES') {
   alert('Definitely true. I once walked 3 hours to get to the nearest bubble tea store.');
+  scoreCounter++;
 }   else if (reallyLoveBubbleTea === 'N' || reallyLoveBubbleTea === 'NO') {
   alert('.... I am obviously not speaking to a fellow bubble tea lover.');
 }   else {
@@ -69,6 +76,7 @@ if(scarySnakes === 'Y' || scarySnakes === 'YES') {
   alert('I am actually not a snake hater. Some of them can even be quite cute.');
 }   else if (scarySnakes === 'N' || scarySnakes === 'NO') {
   alert('I agree, snakes are not bad!');
+  scoreCounter++;
 }   else {
   alert('Please enter Y or N!');
 }
@@ -79,6 +87,7 @@ console.log('Love coding: ' + loveCoding);
 
 if(loveCoding === 'Y' || loveCoding === 'YES') {
   alert('Yes, I am having fun so far.');
+  scoreCounter++;
 }   else if (loveCoding === 'N' || loveCoding === 'NO') {
   alert('Really? You must be pulling my leg.');
 }   else {
@@ -98,6 +107,7 @@ for (var numTries = 0; numTries < 4; numTries++) {
   console.log('Fav Num tried: ' + favNumber);
   if (favNumber === answerFavNum) {
     alert('That is correct!!!!');
+    scoreCounter++;
     break;
   } else if (favNumber > answerFavNum) {
     alert('Too high.');
@@ -116,16 +126,25 @@ var answerFavColors = ['yellow', 'orange', 'purple'];
 
 var favColors;
 
+var correctAnswer = false;
+
 for (var numGuesses = 0; numGuesses < 6; numGuesses++) {
   favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toLowerCase();
   console.log('Colors guessed: ' + favColors);
 
-  if (favColors === answerFavColors[numGuesses]) {
-    alert('That is correct!!!!');
+  for(var i = 0; i < answerFavColors.length; i++) {
+    if (favColors === answerFavColors[i]) {
+      alert('That is correct!!!!');
+      correctAnswer = true;
+      break;
+    }
+  }
+  if (correctAnswer === true) {
+    scoreCounter++;
     break;
-  } else if (favColors !== answerFavColors[numGuesses]) {
+  } else {
     alert('Not a favorite color of mine.');
-  } 
+  }
 }
 if (numGuesses === 6) {
   alert('Out of tries!');
@@ -133,5 +152,6 @@ if (numGuesses === 6) {
 alert('My 3 favorite colors are yellow, orange, and purple.');
 
 //I am glad we are getting to know each other (alert)
-alert('Thanks for playing ' + userName + '! I am glad we are getting to know each other.');
+console.log('Score: ' + scoreCounter);
+alert('Thanks for playing ' + userName + '! I am glad we are getting to know each other. You got ' + scoreCounter + ' out of 8 correct.');
 
