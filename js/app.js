@@ -112,17 +112,25 @@ if (numTries === 4) {
 }
 
 //8 fav colors
-var favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toUpperCase();
-console.log('Love coding: ' + favColors);
+var answerFavColors = ['yellow', 'orange', 'purple'];
 
-if(favColors === 'Y' || favColors === 'YES') {
-  alert('Yes, I am having fun so far.');
-}   else if (favColors === 'N' || favColors === 'NO') {
-  alert('Really? You must be pulling my leg.');
-}   else {
-  alert('Please enter Y or N!');
+var favColors;
+
+for (var numGuesses = 0; numGuesses < 6; numGuesses++) {
+  favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toLowerCase();
+  console.log('Colors guessed: ' + favColors);
+
+  if (favColors === answerFavColors[numGuesses]) {
+    alert('That is correct!!!!');
+    break;
+  } else if (favColors !== answerFavColors[numGuesses]) {
+    alert('Not a favorite color of mine.');
+  } 
 }
-
+if (numGuesses === 6) {
+  alert('Out of tries!');
+}
+alert('My 3 favorite colors are yellow, orange, and purple.');
 
 //I am glad we are getting to know each other (alert)
 alert('Thanks for playing ' + userName + '! I am glad we are getting to know each other.');
