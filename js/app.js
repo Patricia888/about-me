@@ -81,87 +81,99 @@ function questionFourReallyLove(){
 questionFourReallyLove();
 
 //5
-var scarySnakes = prompt('I hate snakes').toUpperCase();
-console.log('Snakes scary: ' + scarySnakes);
+function questionFiveSnakes(){
+  var scarySnakes = prompt('I hate snakes').toUpperCase();
+  console.log('Snakes scary: ' + scarySnakes);
 
-if(scarySnakes === 'Y' || scarySnakes === 'YES') {
-  alert('I am actually not a snake hater. Some of them can even be quite cute.');
-}   else if (scarySnakes === 'N' || scarySnakes === 'NO') {
-  alert('I agree, snakes are not bad!');
-  scoreCounter++;
-}   else {
-  alert('Please enter Y or N!');
+  if(scarySnakes === 'Y' || scarySnakes === 'YES') {
+    alert('I am actually not a snake hater. Some of them can even be quite cute.');
+  }   else if (scarySnakes === 'N' || scarySnakes === 'NO') {
+    alert('I agree, snakes are not bad!');
+    scoreCounter++;
+  }   else {
+    alert('Please enter Y or N!');
+  }
 }
+questionFiveSnakes();
 
 //6
-var loveCoding = prompt('I love coding almost as much as bubble tea').toUpperCase();
-console.log('Love coding: ' + loveCoding);
+function questionSixLoveCoding(){
+  var loveCoding = prompt('I love coding almost as much as bubble tea').toUpperCase();
+  console.log('Love coding: ' + loveCoding);
 
-if(loveCoding === 'Y' || loveCoding === 'YES') {
-  alert('Yes, I am having fun so far.');
-  scoreCounter++;
-}   else if (loveCoding === 'N' || loveCoding === 'NO') {
-  alert('Really? You must be pulling my leg.');
-}   else {
-  alert('Please enter Y or N!');
+  if(loveCoding === 'Y' || loveCoding === 'YES') {
+    alert('Yes, I am having fun so far.');
+    scoreCounter++;
+  }   else if (loveCoding === 'N' || loveCoding === 'NO') {
+    alert('Really? You must be pulling my leg.');
+  }   else {
+    alert('Please enter Y or N!');
+  }
 }
+questionSixLoveCoding();
 
 //7 fav num
-var answerFavNum = 8;
+function questionSevenFaveNumber(){
+  var answerFavNum = 8;
 
-var favNumber;
+  var favNumber;
 
-for (var numTries = 0; numTries < 4; numTries++) {
-  favNumber = prompt('What is my favorite number between 1 and 20? Respond with a number.');
+  for (var numTries = 0; numTries < 4; numTries++) {
+    favNumber = prompt('What is my favorite number between 1 and 20? Respond with a number.');
 
-  favNumber = parseInt(favNumber);
+    favNumber = parseInt(favNumber);
 
-  console.log('Fav Num tried: ' + favNumber);
-  if (favNumber === answerFavNum) {
-    alert('That is correct!!!!');
-    scoreCounter++;
-    break;
-  } else if (favNumber > answerFavNum) {
-    alert('Too high.');
-  } else if (favNumber < answerFavNum) {
-    alert('Too low.');
-  } else {
-    alert('Please guess a number!!');
-  }
-}
-if (numTries === 4) {
-  alert('Out of tries, better luck next time! The answer was 8.');
-}
-
-//8 fav colors
-var answerFavColors = ['yellow', 'orange', 'purple'];
-
-var favColors;
-
-var correctAnswer = false;
-
-for (var numGuesses = 0; numGuesses < 6; numGuesses++) {
-  favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toLowerCase();
-  console.log('Colors guessed: ' + favColors);
-
-  for(var i = 0; i < answerFavColors.length; i++) {
-    if (favColors === answerFavColors[i]) {
+    console.log('Fav Num tried: ' + favNumber);
+    if (favNumber === answerFavNum) {
       alert('That is correct!!!!');
-      correctAnswer = true;
+      scoreCounter++;
       break;
+    } else if (favNumber > answerFavNum) {
+      alert('Too high.');
+    } else if (favNumber < answerFavNum) {
+      alert('Too low.');
+    } else {
+      alert('Please guess a number!!');
     }
   }
-  if (correctAnswer === true) {
-    scoreCounter++;
-    break;
-  } else {
-    alert('Not a favorite color of mine.');
+  if (numTries === 4) {
+    alert('Out of tries, better luck next time! The answer was 8.');
   }
 }
-if (numGuesses === 6) {
-  alert('Out of tries!');
+questionSevenFaveNumber();
+
+//8 fav colors
+function questionEightColors(){
+  var answerFavColors = ['yellow', 'orange', 'purple'];
+
+  var favColors;
+
+  var correctAnswer = false;
+
+  for (var numGuesses = 0; numGuesses < 6; numGuesses++) {
+    favColors = prompt('I have 3 favorite colors. Can you guess one of them? Respond with a color.').toLowerCase();
+    console.log('Colors guessed: ' + favColors);
+
+    for(var i = 0; i < answerFavColors.length; i++) {
+      if (favColors === answerFavColors[i]) {
+        alert('That is correct!!!!');
+        correctAnswer = true;
+        break;
+      }
+    }
+    if (correctAnswer === true) {
+      scoreCounter++;
+      break;
+    } else {
+      alert('Not a favorite color of mine.');
+    }
+  }
+  if (numGuesses === 6) {
+    alert('Out of tries!');
+  }
+  alert('My 3 favorite colors are yellow, orange, and purple.');
 }
-alert('My 3 favorite colors are yellow, orange, and purple.');
+questionEightColors();
 
 //I am glad we are getting to know each other (alert)
 console.log('Score: ' + scoreCounter);
