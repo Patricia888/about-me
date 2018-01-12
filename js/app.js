@@ -49,30 +49,36 @@ function questionTwoLanguages(){
 questionTwoLanguages();
 
 //3
-var bubbleTea = prompt('I love bubble tea').toUpperCase();
-console.log('Bubble tea: ' + bubbleTea);
+function questionThreeBubbleTea(){
+  var bubbleTea = prompt('I love bubble tea').toUpperCase();
+  console.log('Bubble tea: ' + bubbleTea);
 
-if(bubbleTea === 'Y' || bubbleTea === 'YES') {
-  alert('True. One of my favorite indulgences.');
-  scoreCounter++;
-}   else if (bubbleTea === 'N' || bubbleTea === 'NO') {
-  alert('Bubble tea is awesome! I love all the different types.');
-}   else {
-  alert('Please enter Y or N!');
+  if(bubbleTea === 'Y' || bubbleTea === 'YES') {
+    alert('True. One of my favorite indulgences.');
+    scoreCounter++;
+  }   else if (bubbleTea === 'N' || bubbleTea === 'NO') {
+    alert('Bubble tea is awesome! I love all the different types.');
+  }   else {
+    alert('Please enter Y or N!');
+  }
 }
+questionThreeBubbleTea();
 
 //4
-var reallyLoveBubbleTea = prompt('I really, really love bubble tea').toUpperCase();
-console.log('Really love bubble tea: ' + reallyLoveBubbleTea);
+function questionFourReallyLove(){
+  var reallyLoveBubbleTea = prompt('I really, really love bubble tea').toUpperCase();
+  console.log('Really love bubble tea: ' + reallyLoveBubbleTea);
 
-if(reallyLoveBubbleTea === 'Y' || reallyLoveBubbleTea === 'YES') {
-  alert('Definitely true. I once walked 3 hours to get to the nearest bubble tea store.');
-  scoreCounter++;
-}   else if (reallyLoveBubbleTea === 'N' || reallyLoveBubbleTea === 'NO') {
-  alert('.... I am obviously not speaking to a fellow bubble tea lover.');
-}   else {
-  alert('Please enter Y or N!');
+  if(reallyLoveBubbleTea === 'Y' || reallyLoveBubbleTea === 'YES') {
+    alert('Definitely true. I once walked 3 hours to get to the nearest bubble tea store.');
+    scoreCounter++;
+  }   else if (reallyLoveBubbleTea === 'N' || reallyLoveBubbleTea === 'NO') {
+    alert('.... I am obviously not speaking to a fellow bubble tea lover.');
+  }   else {
+    alert('Please enter Y or N!');
+  }
 }
+questionFourReallyLove();
 
 //5
 var scarySnakes = prompt('I hate snakes').toUpperCase();
