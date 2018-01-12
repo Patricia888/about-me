@@ -15,7 +15,6 @@ alert('Nice to meet you ' + userName + '. Get ready to play a guessing game abou
 alert('Answer all of the following questions with Y/N or Yes/No');
 
 //Six Y/N questions (prompts)
-
 //1
 function questionOneTravel(){
   var countries = prompt('I have been to more than 5 different countries.').toUpperCase();
@@ -30,7 +29,6 @@ function questionOneTravel(){
     alert('Please enter Y or N!');
   }
 }
-questionOneTravel();
 
 //2
 function questionTwoLanguages(){
@@ -46,7 +44,7 @@ function questionTwoLanguages(){
     alert('Please enter Y or N!');
   }
 }
-questionTwoLanguages();
+
 
 //3
 function questionThreeBubbleTea(){
@@ -62,7 +60,6 @@ function questionThreeBubbleTea(){
     alert('Please enter Y or N!');
   }
 }
-questionThreeBubbleTea();
 
 //4
 function questionFourReallyLove(){
@@ -78,7 +75,6 @@ function questionFourReallyLove(){
     alert('Please enter Y or N!');
   }
 }
-questionFourReallyLove();
 
 //5
 function questionFiveSnakes(){
@@ -94,7 +90,6 @@ function questionFiveSnakes(){
     alert('Please enter Y or N!');
   }
 }
-questionFiveSnakes();
 
 //6
 function questionSixLoveCoding(){
@@ -110,7 +105,6 @@ function questionSixLoveCoding(){
     alert('Please enter Y or N!');
   }
 }
-questionSixLoveCoding();
 
 //7 fav num
 function questionSevenFaveNumber(){
@@ -140,7 +134,6 @@ function questionSevenFaveNumber(){
     alert('Out of tries, better luck next time! The answer was 8.');
   }
 }
-questionSevenFaveNumber();
 
 //8 fav colors
 function questionEightColors(){
@@ -173,6 +166,15 @@ function questionEightColors(){
   }
   alert('My 3 favorite colors are yellow, orange, and purple.');
 }
+
+//Call functions
+questionOneTravel();
+questionTwoLanguages();
+questionThreeBubbleTea();
+questionFourReallyLove();
+questionFiveSnakes();
+questionSixLoveCoding();
+questionSevenFaveNumber();
 questionEightColors();
 
 //I am glad we are getting to know each other (alert)
