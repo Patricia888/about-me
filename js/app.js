@@ -17,30 +17,36 @@ alert('Answer all of the following questions with Y/N or Yes/No');
 //Six Y/N questions (prompts)
 
 //1
-var countries = prompt('I have been to more than 5 different countries.').toUpperCase();
-console.log('5 countries: ' + countries);
+function questionOneTravel(){
+  var countries = prompt('I have been to more than 5 different countries.').toUpperCase();
+  console.log('5 countries: ' + countries);
 
-if(countries === 'Y' || countries === 'YES') {
-  alert('I have only been to 3 countries, but I would love to travel more.');
-}   else if (countries === 'N' || countries === 'NO') {
-  alert('That is correct, I have only been to 3 different countries.');
-  scoreCounter++;
-}   else {
-  alert('Please enter Y or N!');
+  if(countries === 'Y' || countries === 'YES') {
+    alert('I have only been to 3 countries, but I would love to travel more.');
+  }   else if (countries === 'N' || countries === 'NO') {
+    alert('That is correct, I have only been to 3 different countries.');
+    scoreCounter++;
+  }   else {
+    alert('Please enter Y or N!');
+  }
 }
+questionOneTravel();
 
 //2
-var languages = prompt('I speak 4 languages').toUpperCase();
-console.log('4 languages: ' + languages);
+function questionTwoLanguages(){
+  var languages = prompt('I speak 4 languages').toUpperCase();
+  console.log('4 languages: ' + languages);
 
-if(languages === 'Y' || languages === 'YES') {
-  alert('Correct! I speak English, Spanish, Mandarin, and ASL. I can\'t wait until I can add JavaScript to the list.');
-  scoreCounter++;
-}   else if (languages === 'N' || languages === 'NO') {
-  alert('Nope, I do speak four. Soon to be 5 once I have mastered JavaScript!');
-}   else {
-  alert('Please enter Y or N!');
+  if(languages === 'Y' || languages === 'YES') {
+    alert('Correct! I speak English, Spanish, Mandarin, and ASL. I can\'t wait until I can add JavaScript to the list.');
+    scoreCounter++;
+  }   else if (languages === 'N' || languages === 'NO') {
+    alert('Nope, I do speak four. Soon to be 5 once I have mastered JavaScript!');
+  }   else {
+    alert('Please enter Y or N!');
+  }
 }
+questionTwoLanguages();
 
 //3
 var bubbleTea = prompt('I love bubble tea').toUpperCase();
